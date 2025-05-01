@@ -25,20 +25,20 @@ const Contact: React.FC = () => {
     {
       icon: <Mail size={24} />,
       title: 'Email',
-      value: 'johndoe@example.com',
-      link: 'mailto:johndoe@example.com',
+      value: 'shiveshkumar73520@gmail.com',
+      link: 'mailto:shiveshkumar73520@gmail.com',
     },
     {
       icon: <Phone size={24} />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+91 93416 19722',
+      link: 'tel:93416 19722',
     },
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      value: 'San Francisco, CA',
-      link: 'https://maps.google.com/?q=San+Francisco,+CA',
+      value: 'Nit Meghalaya, Sohra',
+      link: 'https://www.google.com/maps/place/NIT+Meghalaya,+Sohra',
     },
   ];
   
