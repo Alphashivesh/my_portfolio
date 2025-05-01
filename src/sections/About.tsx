@@ -34,7 +34,7 @@ const About: React.FC = () => {
           
           <div>
             <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">
-              I'm John Doe, a passionate developer and designer
+              I'm Shivesh Kumar, a passionate coder, developer and designer
             </h3>
             
             <div className="space-y-4 text-gray-600 dark:text-gray-400">
