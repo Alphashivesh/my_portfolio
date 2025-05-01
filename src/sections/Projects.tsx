@@ -51,11 +51,14 @@ const Projects: React.FC = () => {
       id: 4,
       title: 'Play from youtube',
       description: 'An application that allows users to search, select, and play videos directly on the site without visiting YouTube.',
-      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746112077/youtube_c92eod.png',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746116549/youtube_cvy20r.png',
       tags: ['React Native Web', 'CSS', 'APIs', 'JavaScript (ES6+)'],
       demoLink: 'https://play-from-youtube.vercel.app/',
       codeLink: 'https://github.com/Alphashivesh/Play_from_youtube',
       details: 'This web application leverages the YouTube Data API v3 to programmatically fetch video metadata and content. It includes a search functionality that queries YouTube’s database and returns structured JSON data. Retrieved videos are dynamically rendered using JavaScript and embedded via iframe using video IDs. The frontend is built with HTML, CSS, and JavaScript, ensuring responsive design and smooth UI interactions. API key authentication is securely managed to authorize data requests without exposing credentials.',
+    },
+    {
+      
     },
   ];
 
