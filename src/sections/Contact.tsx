@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
                       errors.email 
                         ? 'border-red-500 dark:border-red-600 focus:ring-red-500 focus:border-red-500' 
                         : 'border-gray-300 dark:border-gray-700 focus:ring-indigo-500 focus:border-indigo-500'
-                    } bg-white dark:bg-gray-900 focus:outline-none focus:ring-2`}
+                    } bg-white dark:bg-gray-400 focus:outline-none focus:ring-2`}
                     placeholder="shiveshkumar73520@gmail.com"
                   />
                   {errors.email && <p className="mt-1 text-sm text-red-600 dark:text-red-500">{errors.email}</p>}
