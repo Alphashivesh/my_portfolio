@@ -22,7 +22,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.01] transition-transform duration-300">
               <img 
-                src="WhatsApp Image 2024-10-04 at 19.51.31_9d08267b.jpg" 
+                src="my_portfolio/WhatsApp Image 2024-10-04 at 19.51.31_9d08267b.jpg" 
                 alt="Professional portrait" 
                 className="w-full h-full object-cover"
               />
