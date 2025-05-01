@@ -49,13 +49,13 @@ const Projects: React.FC = () => {
     },
     {
       id: 4,
-      title: 'Fitness Tracking Platform',
-      description: 'A mobile-first web application for tracking workouts, nutrition, and fitness progress.',
-      image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      tags: ['React Native Web', 'GraphQL', 'AWS', 'Chart.js'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com',
-      details: 'The Fitness Tracking Platform allows users to log workouts, track nutrition, and monitor their fitness progress over time. The app includes features such as workout templates, exercise library, nutritional information database, progress visualization with Chart.js, and personalized recommendations. Built with React Native Web for cross-platform compatibility, it uses GraphQL for efficient data fetching and AWS for scalable backend services.',
+      title: 'Play from youtube',
+      description: 'An application that allows users to search, select, and play videos directly on the site without visiting YouTube.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746112077/youtube_c92eod.png',
+      tags: ['React Native Web', 'CSS', 'APIs', 'JavaScript (ES6+)'],
+      demoLink: 'https://play-from-youtube.vercel.app/',
+      codeLink: 'https://github.com/Alphashivesh/Play_from_youtube',
+      details: 'This web application leverages the YouTube Data API v3 to programmatically fetch video metadata and content. It includes a search functionality that queries YouTube’s database and returns structured JSON data. Retrieved videos are dynamically rendered using JavaScript and embedded via iframe using video IDs. The frontend is built with HTML, CSS, and JavaScript, ensuring responsive design and smooth UI interactions. API key authentication is securely managed to authorize data requests without exposing credentials.',
     },
   ];
 
