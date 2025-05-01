@@ -5,8 +5,8 @@ import { Award, BookOpen, Coffee, Code } from 'lucide-react';
 const About: React.FC = () => {
   const stats = [
     { icon: <Award size={24} />, value: '5+', label: 'Years Experience' },
-    { icon: <Code size={24} />, value: '50+', label: 'Projects Completed' },
-    { icon: <BookOpen size={24} />, value: '100+', label: 'Articles Written' },
+    { icon: <Code size={24} />, value: '15+', label: 'Projects Completed' },
+    { icon: <BookOpen size={24} />, value: '25+', label: 'Articles Written' },
     { icon: <Coffee size={24} />, value: '∞', label: 'Coffee Consumed' },
   ];
 
@@ -42,7 +42,7 @@ const About: React.FC = () => {
                 I specialize in creating stunning and functional websites that leave a lasting impression. With a background in both design and development, I bring a unique perspective to every project I work on.
               </p>
               <p>
-                My journey began over 5 years ago when I discovered my passion for coding. Since then, I've worked with various technologies and frameworks to deliver exceptional digital experiences.
+                My journey began over 3 years ago when I discovered my passion for coding. Since then, I've worked with various technologies and frameworks to deliver exceptional digital experiences.
               </p>
               <p>
                 When I'm not coding, you can find me exploring new design trends, writing articles about web development, or enjoying a cup of coffee while brainstorming new project ideas.
