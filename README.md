@@ -1,3 +1,3 @@
 # my_portfolio
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/Alphashivesh/my_portfolio)
+[Live Demo 🌐](https://my-portfolio-ochre-three-85.vercel.app/#projects)
