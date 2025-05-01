@@ -3,7 +3,7 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState("");
-  const fullText = "I'm a Developer, Designer & Creator";
+  const fullText = "I'm a Coder, Developer, Designer & Creator";
   const typingSpeed = 100;
   
   useEffect(() => {
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 z-10">
         <div className="text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-emerald-600 to-teal-500 animate-gradient">
-            John Doe
+            Shivesh kumar
           </h1>
           
           <div className="h-8 mb-8">
