@@ -42,9 +42,9 @@ const Projects: React.FC = () => {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates and team workspaces.',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com',
+      tags: ['HTML', 'CSS', 'TypeScript', 'JavaScript', 'Vercel'],
+      demoLink: 'https://taskflow-drab.vercel.app/',
+      codeLink: 'https://github.com/Alphashivesh/taskflow',
       details: 'This task management app focuses on team collaboration with features like shared workspaces, real-time updates using Socket.io, and comprehensive task tracking capabilities. Built with Next.js and TypeScript on the frontend and a PostgreSQL database for persistent storage, it offers a robust solution for project management. Features include task creation, assignment, status tracking, deadlines, file attachments, and team communication.',
     },
     {
