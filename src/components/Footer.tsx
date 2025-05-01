@@ -5,10 +5,9 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: <Github size={20} />, url: 'https://github.com', label: 'GitHub' },
-    { icon: <Linkedin size={20} />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Twitter size={20} />, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: <Instagram size={20} />, url: 'https://instagram.com', label: 'Instagram' },
+    { icon: <Github size={20} />, url: 'https://github.com/Alphashivesh', label: 'GitHub' },
+    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/shivesh-kumar-39240b264/', label: 'LinkedIn' },
+    { icon: <Instagram size={20} />, url: 'https://www.instagram.com/phenomenalshivesh/', label: 'Instagram' },
   ];
 
   return (
