@@ -57,9 +57,6 @@ const Projects: React.FC = () => {
       codeLink: 'https://github.com/Alphashivesh/Play_from_youtube',
       details: 'This web application leverages the YouTube Data API v3 to programmatically fetch video metadata and content. It includes a search functionality that queries YouTube’s database and returns structured JSON data. Retrieved videos are dynamically rendered using JavaScript and embedded via iframe using video IDs. The frontend is built with HTML, CSS, and JavaScript, ensuring responsive design and smooth UI interactions. API key authentication is securely managed to authorize data requests without exposing credentials.',
     },
-    {
-      
-    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
