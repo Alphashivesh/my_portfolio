@@ -1,12 +1,12 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
-import { Award, BookOpen, Coffee, Code } from 'lucide-react';
+import { Award, GitBranch, Coffee, Code } from 'lucide-react';
 
 const About: React.FC = () => {
   const stats = [
     { icon: <Award size={24} />, value: '2+', label: 'Years Experience' },
     { icon: <Code size={24} />, value: '15+', label: 'Projects Completed' },
-    { icon: <BookOpen size={24} />, value: '100+', label: 'GitHub Contributions' },
+    { icon: <GitBranch size={24} />, value: '100+', label: 'GitHub Contributions' },
     { icon: <Coffee size={24} />, value: '∞', label: 'Coffee Consumed' },
   ];
 
