@@ -5,23 +5,23 @@ import { GraduationCap, BookOpen, Award, Calendar } from 'lucide-react';
 const Education: React.FC = () => {
   const education = [
     {
-      degree: 'Master of Computer Science',
-      institution: 'Stanford University',
-      period: '2018 - 2020',
-      description: 'Specialized in Artificial Intelligence and Machine Learning with a focus on Computer Vision. Graduated with honors and a 3.9 GPA.',
+      degree: 'Bachelor of Science in Computer Engineering',
+      institution: 'National Institute of Technology Meghalaya',
+      period: '2022 - Present',
+      description: 'Focused on software engineering and web development. Maintain a CGPA of 9.33 till now.',
       icon: <GraduationCap size={24} />,
     },
     {
-      degree: 'Bachelor of Science in Computer Engineering',
-      institution: 'MIT',
-      period: '2014 - 2018',
-      description: 'Focused on software engineering and web development. Participated in multiple hackathons and developed award-winning projects.',
+      degree: 'Secondary and Senior Secondary schooling',
+      institution: 'Paramount Academy, Vimal, Silout',
+      period: '2017 - 2021',
+      description: 'Secured 91% in Class 10 and 87.8% in Class 12, demonstrating consistent academic excellence and strong foundational knowledge.',
       icon: <BookOpen size={24} />,
     },
     {
       degree: 'Web Development Certification',
-      institution: 'Udacity',
-      period: '2017',
+      institution: 'Udemy',
+      period: '2024-2025',
       description: 'Completed an intensive full-stack web development program covering modern JavaScript frameworks, responsive design, and backend development.',
       icon: <Award size={24} />,
     },
