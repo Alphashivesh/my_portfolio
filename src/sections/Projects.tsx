@@ -19,13 +19,13 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform with user authentication, product management, and payment integration.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com',
-      details: 'This project showcases a complete e-commerce solution with features like user authentication, product browsing, shopping cart, checkout process, and payment integration using Stripe. The frontend is built with React and Redux, while the backend uses Node.js, Express, and MongoDB. The platform also includes an admin dashboard for managing products, orders, and customers.',
+      title: 'Chatbot',
+      description: 'An intent-based chatbot leverages NLP to detect user intent and deliver appropriate responses or actions.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746110903/bot_s5elcr.png',
+      tags: ['Python', 'Scikit-learn', 'NLTK', 'Streamlit', 'Pandas', 'Ploty'],
+      demoLink: 'https://chatbot-byshivesh.streamlit.app/',
+      codeLink: 'https://github.com/Alphashivesh/chatbot',
+      details: 'This project demonstrates the practical application of NLP and ML in creating intelligent conversational agents. The chatbot successfully bridges the gap between user queries and automated responses, providing a foundation for future improvements in AI-driven communication systems. An intent-based chatbot processes user input using NLP to classify intents and generate context-aware responses based on predefined training data.',
     },
     {
       id: 2,
