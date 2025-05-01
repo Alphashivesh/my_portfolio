@@ -4,9 +4,9 @@ import { Award, BookOpen, Coffee, Code } from 'lucide-react';
 
 const About: React.FC = () => {
   const stats = [
-    { icon: <Award size={24} />, value: '5+', label: 'Years Experience' },
+    { icon: <Award size={24} />, value: '2+', label: 'Years Experience' },
     { icon: <Code size={24} />, value: '15+', label: 'Projects Completed' },
-    { icon: <BookOpen size={24} />, value: '25+', label: 'Articles Written' },
+    { icon: <BookOpen size={24} />, value: '100+', label: 'Github Contirbution' },
     { icon: <Coffee size={24} />, value: '∞', label: 'Coffee Consumed' },
   ];
 
