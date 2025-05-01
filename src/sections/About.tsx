@@ -22,7 +22,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.01] transition-transform duration-300">
               <img 
-                src="WhatsApp Image 2024-10-04 at 19.51.31_9d08267b.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                src="WhatsApp Image 2024-10-04 at 19.51.31_9d08267b.jpg" 
                 alt="Professional portrait" 
                 className="w-full h-full object-cover"
               />
@@ -42,7 +42,7 @@ const About: React.FC = () => {
                 I specialize in creating stunning and functional websites that leave a lasting impression. With a background in both design and development, I bring a unique perspective to every project I work on.
               </p>
               <p>
-                My journey began over 3 years ago when I discovered my passion for coding. Since then, I've worked with various technologies and frameworks to deliver exceptional digital experiences.
+                My journey began over 2 years ago when I discovered my passion for coding. Since then, I've worked with various technologies and frameworks to deliver exceptional digital experiences.
               </p>
               <p>
                 When I'm not coding, you can find me exploring new design trends, writing articles about web development, or enjoying a cup of coffee while brainstorming new project ideas.
