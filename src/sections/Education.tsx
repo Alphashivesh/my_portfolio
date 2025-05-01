@@ -6,7 +6,7 @@ const Education: React.FC = () => {
   const education = [
     {
       degree: 'Bachelor of Science in Computer Engineering',
-      institution: 'National Institute of Technology Meghalaya',
+      institution: 'NIT Meghalaya',
       period: '2022 - Present',
       description: 'Focused on software engineering and web development. Maintain a CGPA of 9.33 till now.',
       icon: <GraduationCap size={24} />,
