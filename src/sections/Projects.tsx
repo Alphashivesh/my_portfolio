@@ -67,6 +67,16 @@ const Projects: React.FC = () => {
       codeLink: 'https://github.com/Alphashivesh/App_quiz',
       details: 'QuizMaster is an interactive, cross-platform quiz application built with Expo and React Native, supporting both mobile and web. Users choose quiz categories and difficulty levels, then answer randomly generated, timed questions fetched from the Open Trivia DB API. The app features real-time score tracking, instant feedback on answers, and a progress indicator during quizzes. After each quiz, users see their scores and motivational feedback, and can view their rankings on a global leaderboard. The stylish, responsive UI provides category imagery and a smooth experience. The leaderboard highlights top players and tracks personal bests and recent attempts.',
     },
+     {
+      id: 6,
+      title: 'Drum_kit',
+      description: 'A simple web-based drum kit application. It allows users to play different drum sounds by either clicking on buttons or pressing specific keys on their keyboard.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1747402825/drum_u2owrv.jpg',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      demoLink: 'https://drum-kit-seven-gilt.vercel.app/',
+      codeLink: 'https://github.com/Alphashivesh/Drum_kit',
+      details: 'Drum_kit is a simple interactive web-based drum kit application built with HTML, CSS, and JavaScript. Users can play various drum sounds by either clicking on on-screen drum buttons or pressing corresponding keys on their keyboard. Each button is visually styled and mapped to a specific drum sound such as crash, kick, snare, or toms. The app uses JavaScript event listeners to detect user actions and plays audio files accordingly, also providing visual feedback with button animations. This project demonstrates the fundamentals of front-end development, including DOM manipulation and adding interactivity to web pages. It serves as a hands-on exercise for beginners to learn and practice essential web technologies.',
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
