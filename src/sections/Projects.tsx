@@ -57,6 +57,16 @@ const Projects: React.FC = () => {
       codeLink: 'https://github.com/Alphashivesh/Play_from_youtube',
       details: 'This web application leverages the YouTube Data API v3 to programmatically fetch video metadata and content. It includes a search functionality that queries YouTube’s database and returns structured JSON data. Retrieved videos are dynamically rendered using JavaScript and embedded via iframe using video IDs. The frontend is built with HTML, CSS, and JavaScript, ensuring responsive design and smooth UI interactions. API key authentication is securely managed to authorize data requests without exposing credentials.',
     },
+     {
+      id: 5,
+      title: 'Quiz_app',
+      description: 'A beautifully designed, cross-platform quiz application built with Expo and React Native that works seamlessly on both mobile devices and web browsers.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1747397870/quiz_vciywe.webp',
+      tags: ['Expo SDK 52.0.30', 'Expo Router 4.0.17', 'React Native', 'TypeScriptReact', 'Native Reanimated Expo Linear', 'GradientLucide React Native Icons'],
+      demoLink: 'https://sage-pasca-f78fed.netlify.app/',
+      codeLink: 'https://github.com/Alphashivesh/App_quiz',
+      details: 'QuizMaster is an interactive, cross-platform quiz application built with Expo and React Native, supporting both mobile and web. Users choose quiz categories and difficulty levels, then answer randomly generated, timed questions fetched from the Open Trivia DB API. The app features real-time score tracking, instant feedback on answers, and a progress indicator during quizzes. After each quiz, users see their scores and motivational feedback, and can view their rankings on a global leaderboard. The stylish, responsive UI provides category imagery and a smooth experience. The leaderboard highlights top players and tracks personal bests and recent attempts.',
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
