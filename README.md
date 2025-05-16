@@ -1,6 +1,6 @@
-# my_portfolio
+## [Live Demo 🌐](https://my-portfolio-ochre-three-85.vercel.app/)
 
-##[Live Demo 🌐](https://my-portfolio-ochre-three-85.vercel.app/)
+# my_portfolio
 
 A beautiful, responsive portfolio website built with React, TypeScript, and Tailwind CSS, featuring a modern design with smooth animations and dark mode support.
 
