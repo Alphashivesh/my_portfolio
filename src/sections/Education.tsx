@@ -5,10 +5,10 @@ import { GraduationCap, BookOpen, Award, Calendar } from 'lucide-react';
 const Education: React.FC = () => {
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Engineering',
+      degree: 'Bachelor of Technology in Computer Science and Engineering',
       institution: 'NIT Meghalaya',
       period: '2022 - Present',
-      description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.33 till now.',
+      description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.36 till now.',
       icon: <GraduationCap size={24} />,
     },
     {
