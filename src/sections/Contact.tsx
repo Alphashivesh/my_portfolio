@@ -1,6 +1,28 @@
 import React, { useState } from 'react';
-import SectionTitle from '../components/SectionTitle';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+// Removed the external import for SectionTitle as it will be defined inline
+// import SectionTitle from './SectionTitle';
+import { Mail, Phone, MapPin, Send } from 'lucide-react'; // Ensure lucide-react is installed
+
+// Define the SectionTitle component directly within this file
+// This resolves the "Could not resolve" error by making it self-contained.
+interface SectionTitleProps {
+  title: string;
+  subtitle: string;
+}
+
+const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => {
+  return (
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+        {title}
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        {subtitle}
+      </p>
+    </div>
+  );
+};
+
 
 interface FormData {
   name: string;
@@ -20,6 +42,7 @@ const Contact: React.FC = () => {
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null); // State for submission errors
   
   const contactInfo = [
     {
@@ -32,7 +55,7 @@ const Contact: React.FC = () => {
       icon: <Phone size={24} />,
       title: 'Phone',
       value: '+91 93416 19722',
-      link: 'tel:93416 19722',
+      link: 'tel:+919341619722', // Corrected tel link format
     },
     {
       icon: <MapPin size={24} />,
@@ -50,6 +73,9 @@ const Contact: React.FC = () => {
     if (errors[name as keyof typeof errors]) {
       setErrors(prev => ({ ...prev, [name]: undefined }));
     }
+    // Clear success/error messages on new input
+    setSubmitSuccess(false);
+    setSubmitError(null);
   };
   
   const validateForm = () => {
@@ -79,34 +105,65 @@ const Contact: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitSuccess(false); // Reset success message
+    setSubmitError(null);   // Reset error message
     
     if (validateForm()) {
       setIsSubmitting(true);
       
-      // Simulate API call
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setSubmitSuccess(true);
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
+      try {
+        // --- REAL-WORLD IMPLEMENTATION STARTS HERE ---
+        // This is where you would make an actual API call to your backend
+        // or a third-party service like Formspree, EmailJS, etc.
+        // For demonstration, we'll simulate a successful API call.
         
-        // Reset success message after 5 seconds
+        // Example with a hypothetical fetch request:
+        const response = await fetch('/api/send-email', { // Replace with your actual backend endpoint or third-party service URL
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        // Simulate network delay for demonstration purposes
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
+        if (response.ok) { // Check if the response status is 2xx (success)
+          setSubmitSuccess(true);
+          setFormData({ // Clear form on success
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
+        } else {
+          // Handle non-OK responses (e.g., server errors, validation errors from backend)
+          const errorData = await response.json(); // Assuming backend sends JSON error
+          setSubmitError(errorData.message || 'Failed to send message. Please try again.');
+        }
+        // --- REAL-WORLD IMPLEMENTATION ENDS HERE ---
+
+      } catch (error) {
+        console.error('Error sending message:', error);
+        setSubmitError('An unexpected error occurred. Please try again later.');
+      } finally {
+        setIsSubmitting(false);
+        // Reset success/error message after a delay
         setTimeout(() => {
           setSubmitSuccess(false);
+          setSubmitError(null);
         }, 5000);
-      }, 1500);
+      }
     }
   };
 
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
+        {/* SectionTitle component is assumed to be available */}
         <SectionTitle 
           title="Get In Touch" 
           subtitle="Have a project in mind or want to discuss a potential collaboration? I'd love to hear from you!"
@@ -119,14 +176,25 @@ const Contact: React.FC = () => {
               Send Me a Message
             </h3>
             
-            {submitSuccess ? (
+            {submitSuccess && (
               <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 p-4 rounded-lg mb-6 flex items-start">
                 <svg className="h-5 w-5 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <p>Your message has been sent! I'll get back to you as soon as possible.</p>
               </div>
-            ) : (
+            )}
+
+            {submitError && (
+              <div className="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 p-4 rounded-lg mb-6 flex items-start">
+                <svg className="h-5 w-5 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <p>{submitError}</p>
+              </div>
+            )}
+
+            {!submitSuccess && ( // Only show form if not successfully submitted
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
