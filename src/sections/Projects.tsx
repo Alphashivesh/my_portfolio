@@ -77,6 +77,16 @@ const Projects: React.FC = () => {
       codeLink: 'https://github.com/Alphashivesh/Drum_kit',
       details: 'Drum_kit is a simple interactive web-based drum kit application built with HTML, CSS, and JavaScript. Users can play various drum sounds by either clicking on on-screen drum buttons or pressing corresponding keys on their keyboard. Each button is visually styled and mapped to a specific drum sound such as crash, kick, snare, or toms. The app uses JavaScript event listeners to detect user actions and plays audio files accordingly, also providing visual feedback with button animations. This project demonstrates the fundamentals of front-end development, including DOM manipulation and adding interactivity to web pages. It serves as a hands-on exercise for beginners to learn and practice essential web technologies.',
     },
+    {
+      id: 7,
+      title: 'Fake-news-detector',
+      description: 'Fake news detector that uses machine learning to classify articles as real or fake based on their content. Preprocesses text, extracts features, and applies trained models to identify misinformation.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1755271649/fake_ojsqvz.svg',
+      tags: ['Python', 'Pandas', 'NumPy', 'NLTK', 'scikit-learn’s TfidfVectorizer', 'scikit-learn', 'streamlit', 'jupyter notebook'],
+      demoLink: 'https://fake-news-detector-ppavbqxoke7yv5fxuzrtwa.streamlit.app/',
+      codeLink: 'https://github.com/Alphashivesh/fake-news-detector',
+      details: 'The **Fake News Detector** is a machine learning-based system designed to classify news articles as *real* or *fake* by analyzing their textual content. It preprocesses raw text using NLTK, removes noise, and extracts meaningful features through **TF-IDF vectorization**. These features are then fed into trained scikit-learn models for accurate classification. Built with Python, Pandas, and NumPy for data handling, it offers an interactive interface via **Streamlit** and supports experimentation and analysis in **Jupyter Notebook**.',
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
