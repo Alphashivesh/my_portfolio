@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   const socialLinks = [
     { icon: <Github size={20} />, url: 'https://github.com/Alphashivesh', label: 'GitHub' },
     { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/shivesh-kumar-39240b264/', label: 'LinkedIn' },
-    { icon: <Instagram size={20} />, url: 'https://www.instagram.com/phenomenalshivesh/', label: 'Instagram' },
+    { icon: <Instagram size={20} />, url: 'https://www.instagram.com/urawesomeshivesh/', label: 'Instagram' },
   ];
 
   return (
