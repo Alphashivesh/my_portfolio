@@ -9,7 +9,6 @@ const Experience: React.FC = () => {
       company: 'IIT Jodhpur',
       period: 'Jun 2025 – Jul 2025',
       description:
-        'Multi-Agent System for Citation Chronology Visualization'
         'Developed a modular system that automates citation extraction, clustering, and visualization from academic research papers. Leveraged Large Language Models (LLMs), embeddings, and K-Means clustering to identify citation patterns and thematic groups. Designed interactive D3.js hierarchies and Matplotlib timelines to present chronological and semantic insights. This project streamlines literature reviews by reducing manual effort and enabling intelligent citation mapping for researchers.',
       icon: <Code size={24} />,
     },
