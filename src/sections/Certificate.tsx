@@ -51,7 +51,7 @@ const Certificate: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="education" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="certificate" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4 md:px-6">
         <SectionTitle 
           title="Education & Certifications" 
