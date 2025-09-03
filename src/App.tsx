@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Education from './sections/Education';
-import Certificate from './sections/certificate';
+import Certificate from './sections/Certificate';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
@@ -19,6 +19,7 @@ function App() {
           <Hero />
           <About />
           <Education />
+          <Certificate />
           <Skills />
           <Projects />
           <Contact />
