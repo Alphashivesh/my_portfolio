@@ -12,39 +12,18 @@ const Education: React.FC = () => {
       icon: <GraduationCap size={24} />,
     },
     {
-      degree: 'Secondary and Senior Secondary schooling',
+      degree: 'Senior Secondary schooling',
       institution: 'Paramount Academy',
-      period: '2017 - 2021',
-      description: 'Secured 91% in Class 10 and 87.8% in Class 12, demonstrating consistent academic excellence and strong foundational knowledge.',
+      period: '2019 - 2021',
+      description: 'Secured 87.8% in Class 12 (CBSE), reflecting consistent performance and advanced subject proficiency.',
       icon: <BookOpen size={24} />,
     },
     {
-      degree: 'Web Development Certification',
-      institution: 'Udemy',
-      period: '2024-2025',
-      description: 'Completed an intensive full-stack web development program covering modern JavaScript frameworks, responsive design, and backend development.',
-      icon: <Award size={24} />,
-    },
-    {
-      degree: 'Bachelor of Technology in Computer Science and Engineering',
-      institution: 'NIT Meghalaya',
-      period: '2022 - Present',
-      description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.36 till now.',
-      icon: <GraduationCap size={24} />,
-    },
-    {
-      degree: 'Secondary and Senior Secondary schooling',
+      degree: 'Secondary schooling',
       institution: 'Paramount Academy',
-      period: '2017 - 2021',
-      description: 'Secured 91% in Class 10 and 87.8% in Class 12, demonstrating consistent academic excellence and strong foundational knowledge.',
+      period: '2018 - 2019',
+      description: 'Achieved 91% in Class 10 (CBSE), showcasing strong academic excellence and a solid educational foundation.',
       icon: <BookOpen size={24} />,
-    },
-    {
-      degree: 'Web Development Certification',
-      institution: 'Udemy',
-      period: '2024-2025',
-      description: 'Completed an intensive full-stack web development program covering modern JavaScript frameworks, responsive design, and backend development.',
-      icon: <Award size={24} />,
     },
   ];
 
@@ -54,8 +33,8 @@ const Education: React.FC = () => {
     <section id="education" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4 md:px-6">
         <SectionTitle 
-          title="Education & Certifications" 
-          subtitle="My academic journey and professional certifications that have shaped my skills and knowledge."
+          title="Education" 
+          subtitle="My academic journey that have shaped my skills and knowledge."
         />
 
         <div className="max-w-4xl mx-auto">
