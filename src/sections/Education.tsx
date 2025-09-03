@@ -33,7 +33,7 @@ const Education: React.FC = () => {
     <section id="education" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4 md:px-6">
         <SectionTitle 
-          title="Education" 
+          title="Educational Milestones" 
           subtitle="My academic journey that have shaped my skills and knowledge."
         />
 
