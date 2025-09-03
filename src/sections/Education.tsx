@@ -8,7 +8,7 @@ const Education: React.FC = () => {
       degree: 'Bachelor of Technology in Computer Science and Engineering',
       institution: 'NIT Meghalaya',
       period: '2022 - Present',
-      description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.36 till now. For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production. please review the code and i want to create a full functioning app for Health & Fitness AppTracks workouts, calories, and provides personalized routines or diet suggestions, i want to create a website for health and fitness app, Tracks workouts, calories, and provides personalized routines or diet suggestions and also create a readme file for this you can add small ai videos as i t not full functioning please made it full functioning app as i can add any data at any time',
+      description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.36 till now.',
       icon: <GraduationCap size={24} />,
     },
     {
