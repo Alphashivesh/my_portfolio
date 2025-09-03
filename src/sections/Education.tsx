@@ -25,6 +25,27 @@ const Education: React.FC = () => {
       description: 'Completed an intensive full-stack web development program covering modern JavaScript frameworks, responsive design, and backend development.',
       icon: <Award size={24} />,
     },
+    {
+      degree: 'Bachelor of Technology in Computer Science and Engineering',
+      institution: 'NIT Meghalaya',
+      period: '2022 - Present',
+      description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.36 till now.',
+      icon: <GraduationCap size={24} />,
+    },
+    {
+      degree: 'Secondary and Senior Secondary schooling',
+      institution: 'Paramount Academy',
+      period: '2017 - 2021',
+      description: 'Secured 91% in Class 10 and 87.8% in Class 12, demonstrating consistent academic excellence and strong foundational knowledge.',
+      icon: <BookOpen size={24} />,
+    },
+    {
+      degree: 'Web Development Certification',
+      institution: 'Udemy',
+      period: '2024-2025',
+      description: 'Completed an intensive full-stack web development program covering modern JavaScript frameworks, responsive design, and backend development.',
+      icon: <Award size={24} />,
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
