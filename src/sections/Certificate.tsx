@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SectionTitle from '../components/SectionTitle';
-import { GraduationCap, BookOpen, Award, Calendar } from 'lucide-react';
+import { Award, Calendar, ExternalLink } from 'lucide-react';
 
 const Certificate: React.FC = () => {
   const certificate = [
@@ -8,30 +8,38 @@ const Certificate: React.FC = () => {
       degree: 'Web Development Certification',
       institution: 'Udemy',
       period: '2024-2025',
-      description: 'Completed an intensive full-stack web development program covering modern JavaScript frameworks, responsive design, and backend development.',
+      description:
+        'Completed an intensive full-stack web development program with a strong focus on practical projects. Gained expertise in HTML, CSS, JavaScript, React, and responsive design, along with backend development using Node.js and Express. Built and deployed multiple applications to understand real-world development workflows and modern best practices.',
       icon: <Award size={24} />,
+      link: 'https://www.udemy.com/certificate/example',
     },
     {
-      degree: 'AI foundation Certification',
+      degree: 'AI Foundation Certification',
       institution: 'Oracle University',
       period: 'Aug - Sep 2025',
-      description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.36 till now.',
-      icon: <GraduationCap size={24} />,
+      description:
+        'Earned foundational knowledge in Artificial Intelligence concepts, including supervised and unsupervised learning, neural networks, and applications of AI in different industries. Understood the role of data in training AI models and gained exposure to problem-solving using AI-driven approaches, preparing for advanced machine learning projects.',
+      icon: <Award size={24} />,
+      link: 'https://education.oracle.com/certificate/example',
     },
     {
       degree: 'Cybersecurity Fundamentals',
       institution: 'IBM SkillsBuild',
       period: 'Mar - Apr 2025',
-      description: 'Secured 91% in Class 10 and 87.8% in Class 12, demonstrating consistent academic excellence and strong foundational knowledge.',
-      icon: <BookOpen size={24} />,
+      description:
+        'Learned the core principles of cybersecurity including data protection, system vulnerabilities, threat detection, and secure coding practices. Developed an understanding of real-world cyber threats and strategies for risk management. This certification also emphasized ethical hacking basics and secure network configurations.',
+      icon: <Award size={24} />,
+      link: 'https://skillsbuild.ibm.com/certificate/example',
     },
     {
       degree: 'Elements of AI',
-      institution: 'IBM SkillsBuild',
+      institution: 'University of Helsinki & Reaktor via IBM SkillsBuild',
       period: 'Jan - Apr 2025',
-      description: 'Completed an intensive full-stack web development program covering modern JavaScript frameworks, responsive design, and backend development.',
+      description:
+        'Completed an internationally recognized introductory program on Artificial Intelligence. Covered topics like the basics of AI, machine learning, neural networks, and the ethical implications of AI adoption. Engaged in problem-solving tasks that illustrated how AI can be applied in practical, real-world scenarios across industries.',
       icon: <Award size={24} />,
-    }
+      link: 'https://www.elementsofai.com/certificate/example',
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,7 +49,7 @@ const Certificate: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <SectionTitle 
           title="Learning & Achievements" 
-          subtitle="My academic journey and professional certifications that have shaped my skills and knowledge."
+          subtitle="Certifications and learning programs that enhanced my technical expertise and broadened my knowledge base."
         />
 
         <div className="max-w-4xl mx-auto">
@@ -77,7 +85,7 @@ const Certificate: React.FC = () => {
               </div>
             </div>
 
-            {/* Education details */}
+            {/* Certificate details */}
             <div className="md:w-2/3 md:pl-8">
               {certificate.map((item, index) => (
                 <div 
@@ -106,8 +114,19 @@ const Certificate: React.FC = () => {
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
                     {item.description}
                   </p>
+
+                  {item.link && (
+                    <a 
+                      href={item.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:underline font-medium"
+                    >
+                      View Certificate <ExternalLink size={16} className="ml-1" />
+                    </a>
+                  )}
                   
-                  <div className="text-sm text-gray-500 dark:text-gray-500 flex items-center">
+                  <div className="text-sm text-gray-500 dark:text-gray-500 flex items-center mt-3">
                     <Calendar size={16} className="mr-2" />
                     {item.period}
                   </div>
