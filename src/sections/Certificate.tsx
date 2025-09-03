@@ -33,7 +33,7 @@ const Certificate: React.FC = () => {
     },
     {
       degree: 'Elements of AI',
-      institution: 'University of Helsinki & Reaktor via IBM SkillsBuild',
+      institution: 'IBM SkillsBuild',
       period: 'Jan - Apr 2025',
       description:
         'Completed an internationally recognized introductory program on Artificial Intelligence. Covered topics like the basics of AI, machine learning, neural networks, and the ethical implications of AI adoption. Engaged in problem-solving tasks that illustrated how AI can be applied in practical, real-world scenarios across industries.',
