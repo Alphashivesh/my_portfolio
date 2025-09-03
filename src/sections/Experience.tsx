@@ -1,129 +1,123 @@
 import React, { useState } from 'react';
 import SectionTitle from '../components/SectionTitle';
-import { Code, Layout, Database, Server, Lightbulb, Paintbrush } from 'lucide-react';
+import { Briefcase, Code, Users, Calendar } from 'lucide-react';
 
-const Skills: React.FC = () => {
-  const categories = [
+const Experience: React.FC = () => {
+  const experiences = [
     {
-      name: 'Frontend',
-      icon: <Layout size={24} />,
-      color: 'from-blue-500 to-indigo-500',
-    },
-    {
-      name: 'Backend',
-      icon: <Server size={24} />,
-      color: 'from-indigo-500 to-purple-500',
-    },
-    {
-      name: 'Database',
-      icon: <Database size={24} />,
-      color: 'from-purple-500 to-pink-500',
-    },
-    {
-      name: 'Programming',
+      role: 'Frontend Developer Intern',
+      company: 'Tech Solutions Pvt. Ltd.',
+      period: 'May 2024 – July 2024',
+      description:
+        'Contributed to building responsive web applications using React, Tailwind CSS, and TypeScript. Worked closely with the design team to improve UI/UX and optimized frontend performance by 20%.',
       icon: <Code size={24} />,
-      color: 'from-green-500 to-teal-500',
     },
     {
-      name: 'UI/UX Design',
-      icon: <Paintbrush size={24} />,
-      color: 'from-pink-500 to-rose-500',
+      role: 'Campus Technical Coordinator',
+      company: 'NIT Meghalaya',
+      period: '2023 – Present',
+      description:
+        'Organized coding workshops and hackathons for peers. Mentored juniors in web development and DSA, fostering a culture of collaboration and problem-solving.',
+      icon: <Users size={24} />,
     },
     {
-      name: 'Other',
-      icon: <Lightbulb size={24} />,
-      color: 'from-amber-500 to-orange-500',
+      role: 'Web Development Intern',
+      company: 'Startup XYZ',
+      period: 'Jan 2023 – Mar 2023',
+      description:
+        'Developed dynamic landing pages and dashboards using JavaScript and APIs. Enhanced the backend integration workflow and improved cross-browser compatibility.',
+      icon: <Briefcase size={24} />,
     },
   ];
 
-  const skillsData = {
-    'Frontend': [
-      { name: 'HTML/CSS', level: 95 },
-      { name: 'JavaScript', level: 90 },
-      { name: 'React', level: 85 },
-      { name: 'jQuery', level: 85 },
-      { name: 'Bootstrap', level: 80 },
-      { name: 'Next.js', level: 60 },
-    ],
-    'Backend': [
-      { name: 'Node.js', level: 90 },
-      { name: 'Express', level: 80 },
-      { name: 'Django', level: 70 },
-      { name: 'Flask', level: 75 },
-    ],
-    'Database': [
-      { name: 'MongoDB', level: 55 },
-      { name: 'PostgreSQL', level: 85 },
-      { name: 'MySQL', level: 90 },
-    ],
-    'Programming': [
-      { name: 'TypeScript', level: 40 },
-      { name: 'Python', level: 75 },
-      { name: 'C++', level: 85 },
-      { name: 'C', level: 90 },
-    ],
-    'UI/UX Design': [
-      { name: 'Figma', level: 90 },
-      { name: 'Adobe XD', level: 75 },
-      { name: 'Photoshop', level: 70 },
-      { name: 'Illustrator', level: 65 },
-    ],
-    'Other': [
-      { name: 'Git', level: 90 },
-      { name: 'Docker', level: 75 },
-      { name: 'VS Code', level: 70 },
-    ],
-  };
-
-  const [activeCategory, setActiveCategory] = useState(categories[0].name);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-gray-900">
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4 md:px-6">
-        <SectionTitle 
-          title="Skills & Expertise" 
-          subtitle="A comprehensive overview of my technical skills and areas of expertise."
+        <SectionTitle
+          title="Experience & Internships"
+          subtitle="Professional experiences, internships, and leadership roles that helped me gain practical skills."
         />
-        
-        <div className="max-w-5xl mx-auto">
-          {/* Categories */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category.name}
-                onClick={() => setActiveCategory(category.name)}
-                className={`flex flex-col items-center justify-center p-4 rounded-xl transition-all duration-300 ${
-                  activeCategory === category.name
-                    ? `bg-gradient-to-br ${category.color} text-white shadow-lg`
-                    : 'bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
-                }`}
-              >
-                <div className="mb-2">{category.icon}</div>
-                <p className="font-medium">{category.name}</p>
-              </button>
-            ))}
-          </div>
-          
-          {/* Skills list */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-            <h3 className="text-xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">
-              {activeCategory} Skills
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-              {skillsData[activeCategory as keyof typeof skillsData].map((skill, index) => (
-                <div key={index} className="group">
-                  <div className="flex justify-between mb-2">
-                    <span className="font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-                    <span className="text-gray-500 dark:text-gray-400">{skill.level}%</span>
+
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row">
+            {/* Timeline navigation */}
+            <div className="md:w-1/3 mb-8 md:mb-0">
+              <div className="sticky top-24">
+                <div className="space-y-2">
+                  {experiences.map((item, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setActiveIndex(index)}
+                      className={`w-full text-left p-4 rounded-lg transition-all duration-300 flex items-center ${
+                        activeIndex === index
+                          ? 'bg-indigo-100 dark:bg-indigo-900/40 border-l-4 border-indigo-500'
+                          : 'hover:bg-gray-100 dark:hover:bg-gray-700/40'
+                      }`}
+                    >
+                      <div
+                        className={`mr-3 ${
+                          activeIndex === index
+                            ? 'text-indigo-600 dark:text-indigo-400'
+                            : 'text-gray-600 dark:text-gray-400'
+                        }`}
+                      >
+                        <Calendar size={20} />
+                      </div>
+                      <div>
+                        <p
+                          className={`font-medium ${
+                            activeIndex === index
+                              ? 'text-indigo-600 dark:text-indigo-400'
+                              : 'text-gray-800 dark:text-gray-200'
+                          }`}
+                        >
+                          {item.period}
+                        </p>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 truncate">
+                          {item.company}
+                        </p>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Experience details */}
+            <div className="md:w-2/3 md:pl-8">
+              {experiences.map((item, index) => (
+                <div
+                  key={index}
+                  className={`bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg mb-6 transition-all duration-500 transform ${
+                    activeIndex === index
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-0 absolute translate-x-8 pointer-events-none'
+                  }`}
+                  style={{ display: activeIndex === index ? 'block' : 'none' }}
+                >
+                  <div className="flex items-center mb-4">
+                    <div className="p-3 bg-indigo-100 dark:bg-indigo-900/40 rounded-full mr-4 text-indigo-600 dark:text-indigo-400">
+                      {item.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+                        {item.role}
+                      </h3>
+                      <p className="text-indigo-600 dark:text-indigo-400">
+                        {item.company}
+                      </p>
+                    </div>
                   </div>
-                  <div className="h-3 w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                    <div 
-                      className={`h-full rounded-full bg-gradient-to-r ${
-                        categories.find(c => c.name === activeCategory)?.color
-                      } transition-all duration-1000 ease-out group-hover:opacity-80`} 
-                      style={{ width: `${skill.level}%`, transition: 'width 1s ease-in-out' }}
-                    ></div>
+
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                    {item.description}
+                  </p>
+
+                  <div className="text-sm text-gray-500 dark:text-gray-500 flex items-center">
+                    <Calendar size={16} className="mr-2" />
+                    {item.period}
                   </div>
                 </div>
               ))}
@@ -135,4 +129,4 @@ const Skills: React.FC = () => {
   );
 };
 
-export default Skills;
+export default Experience;
