@@ -5,7 +5,7 @@ import { Briefcase, Code, Users, Calendar } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      role: 'Generative Artificial Intelligence Intern',
+      role: 'Generative AI Intern: Multi-Agent System for Citation Chronology Visualization',
       company: 'IIT Jodhpur',
       period: 'Jun 2025 – Jul 2025',
       description:
@@ -17,7 +17,7 @@ const Experience: React.FC = () => {
       company: 'Edunet Foundation',
       period: 'Dec 2024 – Jan 2025',
       description:
-        'Contributed to building responsive web applications using React, Tailwind CSS, and TypeScript. Worked closely with the design team to improve UI/UX and optimized frontend performance by 20%.',
+        'Developed an intelligent conversational chatbot using Python, NLTK, scikit-learn, and Streamlit to understand and respond to user queries in real time. Implemented intent recognition with TF-IDF vectorization and Logistic Regression for accurate query classification. Designed a user-friendly web interface with persistent chat history and CSV-based logging. The chatbot automates responses, provides recommendations, and handles multiple interactions efficiently. This project demonstrates the practical use of NLP and ML in building scalable, AI-driven communication systems.',
       icon: <Code size={24} />,
     },
     {
@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
       company: 'Coding Raja Technologies',
       period: 'Jul 2024 – Aug 2024',
       description:
-        'Organized coding workshops and hackathons for peers. Mentored juniors in web development and DSA, fostering a culture of collaboration and problem-solving.',
+        'I built a Python-based To-Do List and Expense Tracker application that combines task management and financial tracking in a single solution. The app allows users to add, edit, delete, and mark tasks as completed, helping them organize their daily activities effectively. On the financial side, I implemented features to add, categorize, and delete expense records, enabling users to monitor their spending habits. The project was developed with a focus on clean code practices and modular Python design, ensuring scalability and maintainability. I also emphasized user-friendly interactions by designing a simple yet intuitive interface for smooth navigation. This project highlights my ability to integrate multiple functionalities into a cohesive application that improves both productivity and personal finance management.',
       icon: <Users size={24} />,
     },
     {
@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
       company: 'Dabotics India Private Ltd.',
       period: 'Mar 2024 – Apr 2024',
       description:
-        'Developed dynamic landing pages and dashboards using JavaScript and APIs. Enhanced the backend integration workflow and improved cross-browser compatibility.',
+        'I completed a Web Development Internship at Dabotics India, where I contributed to real-world full-stack projects. During this internship, I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, PHP, and MySQL. I worked on building responsive user interfaces and integrating backend functionalities to improve overall site performance and user experience. My role also involved enhancing application efficiency, optimizing database handling, and ensuring clean, maintainable code. Additionally, I collaborated with team members in an Agile environment, which strengthened my problem-solving and teamwork abilities. I also gained valuable exposure to deployment and testing practices, ensuring the delivery of reliable and scalable applications.',
       icon: <Briefcase size={24} />,
     },
   ];
