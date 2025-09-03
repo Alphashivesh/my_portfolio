@@ -64,7 +64,7 @@ const Certificate: React.FC = () => {
             <div className="md:w-1/3 mb-8 md:mb-0">
               <div className="sticky top-24">
                 <div className="space-y-2">
-                  {education.map((item, index) => (
+                  {certificate.map((item, index) => (
                     <button
                       key={index}
                       onClick={() => setActiveIndex(index)}
