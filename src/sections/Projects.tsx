@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
       id: 8,
       title: 'Tic-tac-toe',
       description: 'Tic-Tac-Toe is a simple two-player strategy game played on a 3×3 grid where players take turns marking X or O. The goal is to be the first to align three marks horizontally, vertically, or diagonally.',
-      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1756877708/Screenshot_2025-09-03_110448_lax1et.png',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1756879303/tictactoe_pgv41q.webp',
       tags: ['HTML', 'CSS', 'JavaScript'],
       demoLink: 'https://tic-tac-toe-game-7gak.vercel.app/',
       codeLink: 'https://github.com/Alphashivesh/tic_tac_toe_game?tab=readme-ov-file',
