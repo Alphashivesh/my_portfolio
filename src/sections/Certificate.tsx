@@ -11,7 +11,7 @@ const Certificate: React.FC = () => {
       description:
         'Completed an intensive full-stack web development program with a strong focus on practical projects. Gained expertise in HTML, CSS, JavaScript, React, and responsive design, along with backend development using Node.js and Express. Built and deployed multiple applications to understand real-world development workflows and modern best practices.',
       icon: <Award size={24} />,
-      link: 'https://www.udemy.com/certificate/example',
+      link: 'https://drive.google.com/file/d/1KkT4yTjyvtuI8tlw5yV9uiGdSuR9jCRZ/view?usp=drivesdk',
     },
     {
       degree: 'AI Foundation Certification',
@@ -20,7 +20,7 @@ const Certificate: React.FC = () => {
       description:
         'Earned foundational knowledge in Artificial Intelligence concepts, including supervised and unsupervised learning, neural networks, and applications of AI in different industries. Understood the role of data in training AI models and gained exposure to problem-solving using AI-driven approaches, preparing for advanced machine learning projects.',
       icon: <Award size={24} />,
-      link: 'https://education.oracle.com/certificate/example',
+      link: 'https://drive.google.com/file/d/1irzXMQIvhxgWHOB6WSS9dkUpyX4p03S8/view?usp=drivesdk',
     },
     {
       degree: 'Cybersecurity Fundamentals',
@@ -29,7 +29,7 @@ const Certificate: React.FC = () => {
       description:
         'Learned the core principles of cybersecurity including data protection, system vulnerabilities, threat detection, and secure coding practices. Developed an understanding of real-world cyber threats and strategies for risk management. This certification also emphasized ethical hacking basics and secure network configurations.',
       icon: <Award size={24} />,
-      link: 'https://skillsbuild.ibm.com/certificate/example',
+      link: 'https://drive.google.com/file/d/1KnRkH8utm5WO2jWcP5kWIKDmy_rNdR9E/view?usp=drivesdk',
     },
     {
       degree: 'Elements of AI',
@@ -38,7 +38,7 @@ const Certificate: React.FC = () => {
       description:
         'Completed an internationally recognized introductory program on Artificial Intelligence. Covered topics like the basics of AI, machine learning, neural networks, and the ethical implications of AI adoption. Engaged in problem-solving tasks that illustrated how AI can be applied in practical, real-world scenarios across industries.',
       icon: <Award size={24} />,
-      link: 'https://www.elementsofai.com/certificate/example',
+      link: 'https://drive.google.com/file/d/1Kuiuwgb7SIH_o2FC9O6tdI5Rtmzz75cc/view?usp=drivesdk',
     },
   ];
 
