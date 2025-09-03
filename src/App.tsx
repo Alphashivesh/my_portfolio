@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Education from './sections/Education';
+import Certificate from './sections/certificate';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
