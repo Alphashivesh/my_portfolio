@@ -6,8 +6,8 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       role: 'Generative Artificial Intelligence Intern',
-      company: 'Indian Institute of Technology Jodhpur',
-      period: 'June 2025 – July 2025',
+      company: 'IIT Jodhpur',
+      period: 'Jun 2025 – Jul 2025',
       description:
         'Developed a multi-agent system to automate citation extraction, summarization, clustering, and visualization from academic PDFs. Leveraged Large Language Models (LLMs) to identify citation numbers, authors, and publication years, and generated concise two-line summaries. Applied nomic-embed-text embeddings with K-Means clustering and the elbow method to group citations into thematic clusters. Designed interactive D3.js hierarchies and Matplotlib plots to present chronological and semantic relationships among references. The system significantly reduces manual workload in literature reviews and provides a scalable framework for intelligent citation mapping.',
       icon: <Code size={24} />,
@@ -15,7 +15,7 @@ const Experience: React.FC = () => {
     {
       role: 'Artificial Intelligence and Data Analytics Intern',
       company: 'Edunet Foundation',
-      period: 'December 2024 – January 2025',
+      period: 'Dec 2024 – Jan 2025',
       description:
         'Contributed to building responsive web applications using React, Tailwind CSS, and TypeScript. Worked closely with the design team to improve UI/UX and optimized frontend performance by 20%.',
       icon: <Code size={24} />,
@@ -23,15 +23,15 @@ const Experience: React.FC = () => {
     {
       role: 'Python Intern',
       company: 'Coding Raja Technologies',
-      period: 'July 2024 – August 2024',
+      period: 'Jul 2024 – Aug 2024',
       description:
         'Organized coding workshops and hackathons for peers. Mentored juniors in web development and DSA, fostering a culture of collaboration and problem-solving.',
       icon: <Users size={24} />,
     },
     {
       role: 'Web Development Intern',
-      company: 'Dabotics India Private Limited',
-      period: 'March 2024 – April 2024',
+      company: 'Dabotics India Private Ltd.',
+      period: 'Mar 2024 – Apr 2024',
       description:
         'Developed dynamic landing pages and dashboards using JavaScript and APIs. Enhanced the backend integration workflow and improved cross-browser compatibility.',
       icon: <Briefcase size={24} />,
