@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="experience" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <SectionTitle
           title="Experience & Internships"
@@ -90,7 +90,7 @@ const Experience: React.FC = () => {
               {experiences.map((item, index) => (
                 <div
                   key={index}
-                  className={`bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg mb-6 transition-all duration-500 transform ${
+                  className={`bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-lg mb-6 transition-all duration-500 transform ${
                     activeIndex === index
                       ? 'opacity-100 translate-x-0'
                       : 'opacity-0 absolute translate-x-8 pointer-events-none'
