@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
       company: 'Coding Raja Technologies',
       period: 'Jul 2024 – Aug 2024',
       description:
-        'I built a Python-based To-Do List and Expense Tracker application that combines task management and financial tracking in a single solution. The app allows users to add, edit, delete, and mark tasks as completed, helping them organize their daily activities effectively. On the financial side, I implemented features to add, categorize, and delete expense records, enabling users to monitor their spending habits. The project was developed with a focus on clean code practices and modular Python design, ensuring scalability and maintainability. I also emphasized user-friendly interactions by designing a simple yet intuitive interface for smooth navigation. This project highlights my ability to integrate multiple functionalities into a cohesive application that improves both productivity and personal finance management.',
+        'I built a Python-based To-Do List and Expense Tracker application that combines task management and financial tracking in a single solution. The app allows users to add, edit, delete, and mark tasks as completed, helping them organize their daily activities effectively. On the financial side, I implemented features to add, categorize, and delete expense records, enabling users to monitor their spending habits. The project was developed with a focus on clean code practices and modular Python design, ensuring scalability and maintainability. I also emphasized user-friendly interactions by designing a simple yet intuitive interface for smooth navigation.',
       icon: <Users size={24} />,
     },
     {
@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
       company: 'Dabotics India Private Ltd.',
       period: 'Mar 2024 – Apr 2024',
       description:
-        'I completed a Web Development Internship at Dabotics India, where I contributed to real-world full-stack projects. During this internship, I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, PHP, and MySQL. I worked on building responsive user interfaces and integrating backend functionalities to improve overall site performance and user experience. My role also involved enhancing application efficiency, optimizing database handling, and ensuring clean, maintainable code. Additionally, I collaborated with team members in an Agile environment, which strengthened my problem-solving and teamwork abilities. I also gained valuable exposure to deployment and testing practices, ensuring the delivery of reliable and scalable applications.',
+        'I completed a Web Development Internship at Dabotics India, where I contributed to real-world full-stack projects. During this internship, I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, PHP, and MySQL. I worked on building responsive user interfaces and integrating backend functionalities to improve overall site performance and user experience. My role also involved enhancing application efficiency, optimizing database handling, and ensuring clean, maintainable code. Additionally, I collaborated with team members in an Agile environment, which strengthened my problem-solving and teamwork abilities.',
       icon: <Briefcase size={24} />,
     },
   ];
