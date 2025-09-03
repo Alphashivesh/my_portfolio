@@ -93,7 +93,7 @@ const Certificate: React.FC = () => {
 
             {/* Education details */}
             <div className="md:w-2/3 md:pl-8">
-              {education.map((item, index) => (
+              {certificate.map((item, index) => (
                 <div 
                   key={index}
                   className={`bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg mb-6 transition-all duration-500 transform ${
