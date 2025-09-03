@@ -5,20 +5,6 @@ import { GraduationCap, BookOpen, Award, Calendar } from 'lucide-react';
 const Certificate: React.FC = () => {
   const certificate = [
     {
-      degree: 'Bachelor of Technology in Computer Science and Engineering',
-      institution: 'NIT Meghalaya',
-      period: '2022 - Present',
-      description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.36 till now.',
-      icon: <GraduationCap size={24} />,
-    },
-    {
-      degree: 'Secondary and Senior Secondary schooling',
-      institution: 'Paramount Academy',
-      period: '2017 - 2021',
-      description: 'Secured 91% in Class 10 and 87.8% in Class 12, demonstrating consistent academic excellence and strong foundational knowledge.',
-      icon: <BookOpen size={24} />,
-    },
-    {
       degree: 'Web Development Certification',
       institution: 'Udemy',
       period: '2024-2025',
@@ -26,26 +12,26 @@ const Certificate: React.FC = () => {
       icon: <Award size={24} />,
     },
     {
-      degree: 'Bachelor of Technology in Computer Science and Engineering',
-      institution: 'NIT Meghalaya',
-      period: '2022 - Present',
+      degree: 'AI foundation Certification',
+      institution: 'Oracle University',
+      period: 'Aug - Sep 2025',
       description: 'Focused on software engineering, data structure and web development. Maintain a CGPA of 9.36 till now.',
       icon: <GraduationCap size={24} />,
     },
     {
-      degree: 'Secondary and Senior Secondary schooling',
-      institution: 'Paramount Academy',
-      period: '2017 - 2021',
+      degree: 'Cybersecurity Fundamentals',
+      institution: 'IBM SkillsBuild',
+      period: 'Mar - Apr 2025',
       description: 'Secured 91% in Class 10 and 87.8% in Class 12, demonstrating consistent academic excellence and strong foundational knowledge.',
       icon: <BookOpen size={24} />,
     },
     {
-      degree: 'Web Development Certification',
-      institution: 'Udemy',
-      period: '2024-2025',
+      degree: 'Elements of AI',
+      institution: 'IBM SkillsBuild',
+      period: 'Jan - Apr 2025',
       description: 'Completed an intensive full-stack web development program covering modern JavaScript frameworks, responsive design, and backend development.',
       icon: <Award size={24} />,
-    },
+    }
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
