@@ -29,6 +29,16 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
+      title: 'Fake-news-detector',
+      description: 'Fake news detector that uses machine learning to classify articles as real or fake based on their content. Preprocesses text, extracts features, and applies trained models to identify misinformation.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1755271649/fake_ojsqvz.svg',
+      tags: ['Python', 'Pandas', 'NumPy', 'NLTK', 'scikit-learn’s TfidfVectorizer', 'scikit-learn', 'streamlit', 'jupyter notebook'],
+      demoLink: 'https://fake-news-detector-ppavbqxoke7yv5fxuzrtwa.streamlit.app/',
+      codeLink: 'https://github.com/Alphashivesh/fake-news-detector',
+      details: 'The **Fake News Detector** is a machine learning-based system designed to classify news articles as *real* or *fake* by analyzing their textual content. It preprocesses raw text using NLTK, removes noise, and extracts meaningful features through **TF-IDF vectorization**. These features are then fed into trained scikit-learn models for accurate classification. Built with Python, Pandas, and NumPy for data handling, it offers an interactive interface via **Streamlit** and supports experimentation and analysis in **Jupyter Notebook**.',
+    },
+    {
+      id: 3,
       title: 'Digital Rights Management System',
       description: 'A robust Digital Rights Management system built with React and TypeScript for secure content distribution and license management.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746112619/drm_tfucem.jpg',
@@ -38,7 +48,7 @@ const Projects: React.FC = () => {
       details: 'A secure DRM system built with React 18 and TypeScript, enabling real-time license creation, activation, and management. Access control leverages device fingerprinting, session tracking, and encrypted license keys for secure content delivery. Formal verification modules validate access policies, system state consistency, and license integrity. TailwindCSS powers a responsive UI, with modular components and centralized state using React Context API. The system includes unit, integration, and verification tests for reliability, security, and performance assurance',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates and team workspaces.',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -48,7 +58,7 @@ const Projects: React.FC = () => {
       details: 'This task management app focuses on team collaboration with features like shared workspaces, real-time updates using Socket.io, and comprehensive task tracking capabilities. Built with Next.js and TypeScript on the frontend and a PostgreSQL database for persistent storage, it offers a robust solution for project management. Features include task creation, assignment, status tracking, deadlines, file attachments, and team communication.',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Play from youtube',
       description: 'An application that allows users to search, select, and play videos directly on the site without visiting YouTube.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746116549/youtube_cvy20r.png',
@@ -58,7 +68,7 @@ const Projects: React.FC = () => {
       details: 'This web application leverages the YouTube Data API v3 to programmatically fetch video metadata and content. It includes a search functionality that queries YouTube’s database and returns structured JSON data. Retrieved videos are dynamically rendered using JavaScript and embedded via iframe using video IDs. The frontend is built with HTML, CSS, and JavaScript, ensuring responsive design and smooth UI interactions. API key authentication is securely managed to authorize data requests without exposing credentials.',
     },
      {
-      id: 5,
+      id: 6,
       title: 'Quiz_app',
       description: 'A beautifully designed, cross-platform quiz application built with Expo and React Native that works seamlessly on both mobile devices and web browsers.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1747397870/quiz_vciywe.webp',
@@ -68,7 +78,7 @@ const Projects: React.FC = () => {
       details: 'QuizMaster is an interactive, cross-platform quiz application built with Expo and React Native, supporting both mobile and web. Users choose quiz categories and difficulty levels, then answer randomly generated, timed questions fetched from the Open Trivia DB API. The app features real-time score tracking, instant feedback on answers, and a progress indicator during quizzes. After each quiz, users see their scores and motivational feedback, and can view their rankings on a global leaderboard. The stylish, responsive UI provides category imagery and a smooth experience. The leaderboard highlights top players and tracks personal bests and recent attempts.',
     },
      {
-      id: 6,
+      id: 7,
       title: 'Drum_kit',
       description: 'A simple web-based drum kit application. It allows users to play different drum sounds by either clicking on buttons or pressing specific keys on their keyboard.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1747402825/drum_u2owrv.jpg',
@@ -78,14 +88,14 @@ const Projects: React.FC = () => {
       details: 'Drum_kit is a simple interactive web-based drum kit application built with HTML, CSS, and JavaScript. Users can play various drum sounds by either clicking on on-screen drum buttons or pressing corresponding keys on their keyboard. Each button is visually styled and mapped to a specific drum sound such as crash, kick, snare, or toms. The app uses JavaScript event listeners to detect user actions and plays audio files accordingly, also providing visual feedback with button animations. This project demonstrates the fundamentals of front-end development, including DOM manipulation and adding interactivity to web pages. It serves as a hands-on exercise for beginners to learn and practice essential web technologies.',
     },
     {
-      id: 7,
-      title: 'Fake-news-detector',
-      description: 'Fake news detector that uses machine learning to classify articles as real or fake based on their content. Preprocesses text, extracts features, and applies trained models to identify misinformation.',
-      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1755271649/fake_ojsqvz.svg',
-      tags: ['Python', 'Pandas', 'NumPy', 'NLTK', 'scikit-learn’s TfidfVectorizer', 'scikit-learn', 'streamlit', 'jupyter notebook'],
-      demoLink: 'https://fake-news-detector-ppavbqxoke7yv5fxuzrtwa.streamlit.app/',
-      codeLink: 'https://github.com/Alphashivesh/fake-news-detector',
-      details: 'The **Fake News Detector** is a machine learning-based system designed to classify news articles as *real* or *fake* by analyzing their textual content. It preprocesses raw text using NLTK, removes noise, and extracts meaningful features through **TF-IDF vectorization**. These features are then fed into trained scikit-learn models for accurate classification. Built with Python, Pandas, and NumPy for data handling, it offers an interactive interface via **Streamlit** and supports experimentation and analysis in **Jupyter Notebook**.',
+      id: 8,
+      title: 'Tic-tac-toe',
+      description: 'Tic-Tac-Toe is a simple two-player strategy game played on a 3×3 grid where players take turns marking X or O. The goal is to be the first to align three marks horizontally, vertically, or diagonally.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1756877280/Screenshot_2025-09-03_105558_abyykc.png',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      demoLink: 'https://tic-tac-toe-game-7gak.vercel.app/',
+      codeLink: 'https://github.com/Alphashivesh/tic_tac_toe_game?tab=readme-ov-file',
+      details: 'I developed a fully interactive Tic-Tac-Toe game using HTML, CSS, and JavaScript to demonstrate my front-end development skills. The game is designed for two players, where each player alternately places their mark (X or O) on a 3×3 grid. I implemented the complete game logic in JavaScript, including turn switching, win detection across rows, columns, and diagonals, and handling draw conditions. The user interface is styled with CSS to provide a clean, visually appealing, and responsive layout that works across different screen sizes. Additionally, I added a reset functionality so that players can quickly restart the game and enjoy repeated matches without reloading the page.',
     },
   ];
 
