@@ -8,7 +8,7 @@ const Education: React.FC = () => {
       degree: 'Bachelor of Technology in Computer Science and Engineering',
       institution: 'NIT Meghalaya',
       period: '2022 - Present',
-      description: 'Specialized in Software Engineering, Data Structures, and Web Development, with a strong academic focus. Currently holding a CGPA of 9.36 and ranked among the top performers in my branch.',
+      description: 'Specialized in Software Engineering, Data Structures, Web Development, Database, and OOPs with a strong academic focus. Currently holding a CGPA of 9.36 and ranked among the top performers in my branch.',
       icon: <GraduationCap size={24} />,
     },
     {
