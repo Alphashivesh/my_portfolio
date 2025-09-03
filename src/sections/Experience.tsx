@@ -9,7 +9,8 @@ const Experience: React.FC = () => {
       company: 'IIT Jodhpur',
       period: 'Jun 2025 – Jul 2025',
       description:
-        'Developed a multi-agent system to automate citation extraction, summarization, clustering, and visualization from academic PDFs. Leveraged Large Language Models (LLMs) to identify citation numbers, authors, and publication years, and generated concise two-line summaries. Applied nomic-embed-text embeddings with K-Means clustering and the elbow method to group citations into thematic clusters. Designed interactive D3.js hierarchies and Matplotlib plots to present chronological and semantic relationships among references. The system significantly reduces manual workload in literature reviews and provides a scalable framework for intelligent citation mapping.',
+        'Multi-Agent System for Citation Chronology Visualization'
+        'Developed a modular system that automates citation extraction, clustering, and visualization from academic research papers. Leveraged Large Language Models (LLMs), embeddings, and K-Means clustering to identify citation patterns and thematic groups. Designed interactive D3.js hierarchies and Matplotlib timelines to present chronological and semantic insights. This project streamlines literature reviews by reducing manual effort and enabling intelligent citation mapping for researchers.',
       icon: <Code size={24} />,
     },
     {
