@@ -97,6 +97,16 @@ const Projects: React.FC = () => {
       codeLink: 'https://github.com/Alphashivesh/tic_tac_toe_game?tab=readme-ov-file',
       details: 'I developed a fully interactive Tic-Tac-Toe game using HTML, CSS, and JavaScript to demonstrate my front-end development skills. The game is designed for two players, where each player alternately places their mark (X or O) on a 3×3 grid. I implemented the complete game logic in JavaScript, including turn switching, win detection across rows, columns, and diagonals, and handling draw conditions. The user interface is styled with CSS to provide a clean, visually appealing, and responsive layout that works across different screen sizes. Additionally, I added a reset functionality so that players can quickly restart the game and enjoy repeated matches without reloading the page.',
     },
+    {
+      id: 9,
+      title: 'Expense Tracker',
+      description: 'This project is a Streamlit-based Expense Tracker that lets users record income and expenses, set budgets, manage recurring transactions, and view interactive financial reports.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1757054469/Screenshot_2025-09-05_121050_b62siu.png',
+      tags: ['Streamlit', 'Pandas', 'NumPy', 'CSV & JSON'],
+      demoLink: 'https://eulj5unitfwym7bxqjaafw.streamlit.app/',
+      codeLink: 'https://github.com/Alphashivesh/Coding-Raja-Technologies-Internship-',
+      details: 'This project is a Streamlit-based Expense Tracker App designed to help users manage their personal finances with ease. It allows users to add, view, and delete income and expense records while categorizing them for better organization. The app features budget management, recurring transactions, and a dashboard with charts and KPIs to visualize spending habits and financial health. Built with Streamlit, Pandas, and NumPy, it uses simple CSV/JSON file storage that is auto-created on first run, so no manual setup is needed. Users can also apply filters, generate reports, and import/export data for flexibility. This makes it a lightweight yet powerful tool for everyday financial tracking.',
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
