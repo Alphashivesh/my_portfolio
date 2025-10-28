@@ -58,10 +58,10 @@ const Projects: React.FC = () => {
       details: 'This application serves as a comprehensive platform for users to find and request services from various vendors. It features a dynamic home screen that lists all available service categories, a user registration and login system, and a unique, detailed request form for each category. The project is built with a modern tech stack, featuring a cross-platform Flutter application for the frontend and a robust Node.js REST API for the backend, all connected to a MySQL database.',
     },
     {
-      id: 3,
+      id: 5,
       title: 'Digital Rights Management System',
       description: 'A robust Digital Rights Management system built with React and TypeScript for secure content distribution and license management.',
-      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746112619/drm_tfucem.jpg',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1761653311/hire_knrr62.avif',
       tags: ['React 18', 'TypeScript', 'Vite', 'Node.js', 'Tailwind CSS'],
       demoLink: 'https://drm-wk6a.vercel.app/',
       codeLink: 'https://github.com/Alphashivesh/DRM',
