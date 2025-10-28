@@ -59,16 +59,16 @@ const Projects: React.FC = () => {
     },
     {
       id: 5,
-      title: 'Digital Rights Management System',
-      description: 'A robust Digital Rights Management system built with React and TypeScript for secure content distribution and license management.',
+      title: 'Mini Hiring - App',
+      description: 'A comprehensive React-based hiring platform that enables HR teams to manage jobs, candidates, and assessments with an intuitive, modern interface.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1761653311/hire_knrr62.avif',
-      tags: ['React 18', 'TypeScript', 'Vite', 'Node.js', 'Tailwind CSS'],
-      demoLink: 'https://drm-wk6a.vercel.app/',
-      codeLink: 'https://github.com/Alphashivesh/DRM',
-      details: 'A secure DRM system built with React 18 and TypeScript, enabling real-time license creation, activation, and management. Access control leverages device fingerprinting, session tracking, and encrypted license keys for secure content delivery. Formal verification modules validate access policies, system state consistency, and license integrity. TailwindCSS powers a responsive UI, with modular components and centralized state using React Context API. The system includes unit, integration, and verification tests for reliability, security, and performance assurance',
+      tags: ['React 18.2.0', 'TypeScript 5.0', 'Vite', 'Supabase', 'Tailwind CSS'],
+      demoLink: 'https://hiring-app-ji57.vercel.app/',
+      codeLink: 'https://github.com/Alphashivesh/Hiring_App',
+      details: 'TalentFlow is a comprehensive hiring platform for HR teams, built with React and Supabase. It allows you to create, manage, and reorder job postings with advanced filtering. You can track candidates through a virtualized list for handling thousands of entries, a detailed profile view, or a drag-and-drop kanban board. Its core feature is a dynamic assessment builder that lets you create custom, multi-question tests for any role, complete with conditional logic and a live preview.',
     },
     {
-      id: 3,
+      id: 6,
       title: 'Digital Rights Management System',
       description: 'A robust Digital Rights Management system built with React and TypeScript for secure content distribution and license management.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746112619/drm_tfucem.jpg',
@@ -77,9 +77,8 @@ const Projects: React.FC = () => {
       codeLink: 'https://github.com/Alphashivesh/DRM',
       details: 'A secure DRM system built with React 18 and TypeScript, enabling real-time license creation, activation, and management. Access control leverages device fingerprinting, session tracking, and encrypted license keys for secure content delivery. Formal verification modules validate access policies, system state consistency, and license integrity. TailwindCSS powers a responsive UI, with modular components and centralized state using React Context API. The system includes unit, integration, and verification tests for reliability, security, and performance assurance',
     },
-    
     {
-      id: 4,
+      id: 7,
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates and team workspaces.',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -89,7 +88,7 @@ const Projects: React.FC = () => {
       details: 'This task management app focuses on team collaboration with features like shared workspaces, real-time updates using Socket.io, and comprehensive task tracking capabilities. Built with Next.js and TypeScript on the frontend and a PostgreSQL database for persistent storage, it offers a robust solution for project management. Features include task creation, assignment, status tracking, deadlines, file attachments, and team communication.',
     },
     {
-      id: 5,
+      id: 8,
       title: 'Play from youtube',
       description: 'An application that allows users to search, select, and play videos directly on the site without visiting YouTube.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746116549/youtube_cvy20r.png',
@@ -99,7 +98,7 @@ const Projects: React.FC = () => {
       details: 'This web application leverages the YouTube Data API v3 to programmatically fetch video metadata and content. It includes a search functionality that queries YouTube’s database and returns structured JSON data. Retrieved videos are dynamically rendered using JavaScript and embedded via iframe using video IDs. The frontend is built with HTML, CSS, and JavaScript, ensuring responsive design and smooth UI interactions. API key authentication is securely managed to authorize data requests without exposing credentials.',
     },
      {
-      id: 6,
+      id: 9,
       title: 'Quiz_app',
       description: 'A beautifully designed, cross-platform quiz application built with Expo and React Native that works seamlessly on both mobile devices and web browsers.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1747397870/quiz_vciywe.webp',
@@ -109,7 +108,7 @@ const Projects: React.FC = () => {
       details: 'QuizMaster is an interactive, cross-platform quiz application built with Expo and React Native, supporting both mobile and web. Users choose quiz categories and difficulty levels, then answer randomly generated, timed questions fetched from the Open Trivia DB API. The app features real-time score tracking, instant feedback on answers, and a progress indicator during quizzes. After each quiz, users see their scores and motivational feedback, and can view their rankings on a global leaderboard. The stylish, responsive UI provides category imagery and a smooth experience. The leaderboard highlights top players and tracks personal bests and recent attempts.',
     },
      {
-      id: 7,
+      id: 10,
       title: 'Drum_kit',
       description: 'A simple web-based drum kit application. It allows users to play different drum sounds by either clicking on buttons or pressing specific keys on their keyboard.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1747402825/drum_u2owrv.jpg',
@@ -119,7 +118,7 @@ const Projects: React.FC = () => {
       details: 'Drum_kit is a simple interactive web-based drum kit application built with HTML, CSS, and JavaScript. Users can play various drum sounds by either clicking on on-screen drum buttons or pressing corresponding keys on their keyboard. Each button is visually styled and mapped to a specific drum sound such as crash, kick, snare, or toms. The app uses JavaScript event listeners to detect user actions and plays audio files accordingly, also providing visual feedback with button animations. This project demonstrates the fundamentals of front-end development, including DOM manipulation and adding interactivity to web pages. It serves as a hands-on exercise for beginners to learn and practice essential web technologies.',
     },
     {
-      id: 8,
+      id: 11,
       title: 'Tic-tac-toe',
       description: 'Tic-Tac-Toe is a simple two-player strategy game played on a 3×3 grid where players take turns marking X or O. The goal is to be the first to align three marks horizontally, vertically, or diagonally.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1756879303/tictactoe_pgv41q.webp',
@@ -129,7 +128,7 @@ const Projects: React.FC = () => {
       details: 'I developed a fully interactive Tic-Tac-Toe game using HTML, CSS, and JavaScript to demonstrate my front-end development skills. The game is designed for two players, where each player alternately places their mark (X or O) on a 3×3 grid. I implemented the complete game logic in JavaScript, including turn switching, win detection across rows, columns, and diagonals, and handling draw conditions. The user interface is styled with CSS to provide a clean, visually appealing, and responsive layout that works across different screen sizes. Additionally, I added a reset functionality so that players can quickly restart the game and enjoy repeated matches without reloading the page.',
     },
     {
-      id: 9,
+      id: 12,
       title: 'Expense Tracker',
       description: 'This project is a Streamlit-based Expense Tracker that lets users record income and expenses, set budgets, manage recurring transactions, and view interactive financial reports.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1757054469/Screenshot_2025-09-05_121050_b62siu.png',
