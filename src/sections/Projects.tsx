@@ -19,6 +19,15 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: 'DocuMind AI',
+      description: 'An intelligent document analysis platform that uses multimodal AI to extract insights and enable real-time chat with PDFs.',
+      image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1775294691/Screenshot_2026-04-04_145435_x4a60r.png',
+      tags: ['React', 'FastAPI', 'Tailwind', 'Gemini AI', 'Supabase', 'Render'],
+      demoLink: 'https://documind-by-shivesh.vercel.app/',
+      details: 'DocuMind AI is a full-stack application that transforms static documents into interactive conversational agents. Built with a React frontend and a FastAPI backend, it leverages Google\'s Gemini Vision API to analyze complex PDFs. Key features include secure user authentication via Supabase, an analytics dashboard using Recharts, a responsive mobile-first UI with Tailwind CSS, and a real-time streaming chat terminal for a seamless user experience.',
+    },
+    {
+      id: 2,
       title: 'Chatbot',
       description: 'An intent-based chatbot leverages NLP to detect user intent and deliver appropriate responses or actions.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746110903/bot_s5elcr.png',
@@ -28,7 +37,7 @@ const Projects: React.FC = () => {
       details: 'This project demonstrates the practical application of NLP and ML in creating intelligent conversational agents. The chatbot successfully bridges the gap between user queries and automated responses, providing a foundation for future improvements in AI-driven communication systems. An intent-based chatbot processes user input using NLP to classify intents and generate context-aware responses based on predefined training data.',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Fake-news-detector',
       description: 'Fake news detector that uses machine learning to classify articles as real or fake based on their content. Preprocesses text, extracts features, and applies trained models to identify misinformation.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1755271649/fake_ojsqvz.svg',
@@ -38,7 +47,7 @@ const Projects: React.FC = () => {
       details: 'The **Fake News Detector** is a machine learning-based system designed to classify news articles as *real* or *fake* by analyzing their textual content. It preprocesses raw text using NLTK, removes noise, and extracts meaningful features through **TF-IDF vectorization**. These features are then fed into trained scikit-learn models for accurate classification. Built with Python, Pandas, and NumPy for data handling, it offers an interactive interface via **Streamlit** and supports experimentation and analysis in **Jupyter Notebook**.',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Digital Rights Management System',
       description: 'A robust Digital Rights Management system built with React and TypeScript for secure content distribution and license management.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746112619/drm_tfucem.jpg',
@@ -48,7 +57,7 @@ const Projects: React.FC = () => {
       details: 'A secure DRM system built with React 18 and TypeScript, enabling real-time license creation, activation, and management. Access control leverages device fingerprinting, session tracking, and encrypted license keys for secure content delivery. Formal verification modules validate access policies, system state consistency, and license integrity. TailwindCSS powers a responsive UI, with modular components and centralized state using React Context API. The system includes unit, integration, and verification tests for reliability, security, and performance assurance',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Mobile App',
       description: 'A full-stack mobile application built with Flutter and Node.js that connects users with a wide variety of local service providers.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1761652886/app_mycx7k.webp',
@@ -58,7 +67,7 @@ const Projects: React.FC = () => {
       details: 'This application serves as a comprehensive platform for users to find and request services from various vendors. It features a dynamic home screen that lists all available service categories, a user registration and login system, and a unique, detailed request form for each category. The project is built with a modern tech stack, featuring a cross-platform Flutter application for the frontend and a robust Node.js REST API for the backend, all connected to a MySQL database.',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Mini Hiring - App',
       description: 'A comprehensive React-based hiring platform that enables HR teams to manage jobs, candidates, and assessments with an intuitive, modern interface.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1761653311/hire_knrr62.avif',
@@ -68,7 +77,7 @@ const Projects: React.FC = () => {
       details: 'TalentFlow is a comprehensive hiring platform for HR teams, built with React and Supabase. It allows you to create, manage, and reorder job postings with advanced filtering. You can track candidates through a virtualized list for handling thousands of entries, a detailed profile view, or a drag-and-drop kanban board. Its core feature is a dynamic assessment builder that lets you create custom, multi-question tests for any role, complete with conditional logic and a live preview.',
     },
     {
-      id: 6,
+      id: 7,
       title: 'Mines Duel',
       description: 'Mines Duel is a fast-paced, two-player strategy game of luck and risk. Built with React and `framer-motion` for a fun, interactive experience.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1761669950/mines_m4hex2.webp',
@@ -78,7 +87,7 @@ const Projects: React.FC = () => {
       details: 'Mines Duel is a fast-paced, 2-player strategy game of high-stakes luck. Players take turns revealing tiles on a 5x5 grid, hunting for valuable treasure. Uncover gems for +10 points and coins for +5, but beware of the hidden mines that cost you 10 points. The duel ends immediately when either the entire grid is revealed or all 5 mines have been found. The player with the most points wins!',
     },
     {
-      id: 7,
+      id: 8,
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates and team workspaces.',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -88,7 +97,7 @@ const Projects: React.FC = () => {
       details: 'This task management app focuses on team collaboration with features like shared workspaces, real-time updates using Socket.io, and comprehensive task tracking capabilities. Built with Next.js and TypeScript on the frontend and a PostgreSQL database for persistent storage, it offers a robust solution for project management. Features include task creation, assignment, status tracking, deadlines, file attachments, and team communication.',
     },
     {
-      id: 8,
+      id: 9,
       title: 'Play from youtube',
       description: 'An application that allows users to search, select, and play videos directly on the site without visiting YouTube.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1746116549/youtube_cvy20r.png',
@@ -98,7 +107,7 @@ const Projects: React.FC = () => {
       details: 'This web application leverages the YouTube Data API v3 to programmatically fetch video metadata and content. It includes a search functionality that queries YouTube’s database and returns structured JSON data. Retrieved videos are dynamically rendered using JavaScript and embedded via iframe using video IDs. The frontend is built with HTML, CSS, and JavaScript, ensuring responsive design and smooth UI interactions. API key authentication is securely managed to authorize data requests without exposing credentials.',
     },
      {
-      id: 9,
+      id: 10,
       title: 'Quiz_app',
       description: 'A beautifully designed, cross-platform quiz application built with Expo and React Native that works seamlessly on both mobile devices and web browsers.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1747397870/quiz_vciywe.webp',
@@ -108,7 +117,7 @@ const Projects: React.FC = () => {
       details: 'QuizMaster is an interactive, cross-platform quiz application built with Expo and React Native, supporting both mobile and web. Users choose quiz categories and difficulty levels, then answer randomly generated, timed questions fetched from the Open Trivia DB API. The app features real-time score tracking, instant feedback on answers, and a progress indicator during quizzes. After each quiz, users see their scores and motivational feedback, and can view their rankings on a global leaderboard. The stylish, responsive UI provides category imagery and a smooth experience. The leaderboard highlights top players and tracks personal bests and recent attempts.',
     },
      {
-      id: 10,
+      id: 11,
       title: 'Drum_kit',
       description: 'A simple web-based drum kit application. It allows users to play different drum sounds by either clicking on buttons or pressing specific keys on their keyboard.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1747402825/drum_u2owrv.jpg',
@@ -118,7 +127,7 @@ const Projects: React.FC = () => {
       details: 'Drum_kit is a simple interactive web-based drum kit application built with HTML, CSS, and JavaScript. Users can play various drum sounds by either clicking on on-screen drum buttons or pressing corresponding keys on their keyboard. Each button is visually styled and mapped to a specific drum sound such as crash, kick, snare, or toms. The app uses JavaScript event listeners to detect user actions and plays audio files accordingly, also providing visual feedback with button animations. This project demonstrates the fundamentals of front-end development, including DOM manipulation and adding interactivity to web pages. It serves as a hands-on exercise for beginners to learn and practice essential web technologies.',
     },
     {
-      id: 11,
+      id: 12,
       title: 'Tic-tac-toe',
       description: 'Tic-Tac-Toe is a simple two-player strategy game played on a 3×3 grid where players take turns marking X or O. The goal is to be the first to align three marks horizontally, vertically, or diagonally.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1756879303/tictactoe_pgv41q.webp',
@@ -128,7 +137,7 @@ const Projects: React.FC = () => {
       details: 'I developed a fully interactive Tic-Tac-Toe game using HTML, CSS, and JavaScript to demonstrate my front-end development skills. The game is designed for two players, where each player alternately places their mark (X or O) on a 3×3 grid. I implemented the complete game logic in JavaScript, including turn switching, win detection across rows, columns, and diagonals, and handling draw conditions. The user interface is styled with CSS to provide a clean, visually appealing, and responsive layout that works across different screen sizes. Additionally, I added a reset functionality so that players can quickly restart the game and enjoy repeated matches without reloading the page.',
     },
     {
-      id: 12,
+      id: 13,
       title: 'Expense Tracker',
       description: 'This project is a Streamlit-based Expense Tracker that lets users record income and expenses, set budgets, manage recurring transactions, and view interactive financial reports.',
       image: 'https://res.cloudinary.com/dyhsntoii/image/upload/v1757054469/Screenshot_2025-09-05_121050_b62siu.png',
